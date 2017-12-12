@@ -18,13 +18,16 @@
 	Hellooooo
 </h1>
 
-<script type="text/javascript" src="<?php echo $pathLinkFile; ?>js/jquery-3.2.1.min.js"></script>
-<!--[if lt IE 9]>
-    <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
-<![endif]-->
-<script type="text/javascript" src="<?php echo $pathLinkFile; ?>js/sliker.js"></script>
-<script type="text/javascript" src="<?php echo $pathLinkFile; ?>js/formflex.js"></script>
-<script type="text/javascript" src="<?php echo $pathLinkFile; ?>js/startpack.js"></script>
-<script type="text/javascript" src="<?php echo $pathLinkFile; ?>js/monjquery.js"></script>
+<ul>
+	<?php for($i=1;$i<=10;$i++){ ?>
+	<li>
+		<img src="<?php echo $pathLinkFile; ?>img/examples/<?php echo $i; ?>.jpg">
+	</li>
+	<?php } ?>
+</ul>
+
+<script type="text/javascript" src="<?php echo $pathLinkFile; ?>js-output/bundle-vendors.js"></script>
+<script type="text/javascript" src="<?php echo $pathLinkFile; ?>js-output/bundle-progra.js"></script>
+<script type="text/javascript" src="<?php echo $pathLinkFile; ?>js-output/bundle-integrator.js"></script>
 </body>
 </html>
